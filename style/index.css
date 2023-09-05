@@ -1,0 +1,377 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.one{
+    width: 200px;
+    height: 70px;
+    background-color: grey;
+    border: 1px solid  black; 
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    left: 100px;
+}
+.one::after{
+    content: "";
+    width: 0%;
+    height: 100%;
+    background-color: blue;
+    position: absolute;
+    top: 0;
+    /* left: 100%; */
+    transition-duration: 1s;
+    left: 0;
+    z-index: -1;
+}
+.one:hover::after{
+    /* left: 0; */
+    width: 100%;
+}
+
+.two{
+    width: 200px;
+    height: 70px;
+    background-color:cadetblue;
+    border: 1px solid  black; 
+    position: relative;
+    z-index: 1;
+    /* overflow: hidden; */
+    left: 200px;
+}
+.two::after{
+    content: "";
+    width: 0%;
+    height: 100%;
+    background-color: purple;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    transition-duration: 1s;
+    /* left: 0; */
+    z-index: -1;
+}
+.two:hover::after{
+    left: 0;
+    width: 100%;
+}
+
+
+
+
+.three{
+    width: 200px;
+    height: 70px;
+    background-color: yellowgreen;
+    border: 1px solid  black; 
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    left: 300px;
+}
+.three::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: cyan ;
+    position: absolute;
+    top: -100%;
+    transition-duration: 1s;
+    left: 0;
+    z-index: -1;
+}
+.three:hover::after{
+    top:0%;
+    left: 0%;
+}
+
+
+.four{
+    width: 200px;
+    height: 70px;
+    background-color: coral;
+    border: 1px solid  black; 
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    left: -512px;
+    top: 100px;
+    
+
+}
+  .four::after
+ {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: crimson  ;
+    position: absolute;
+    top: 100%;
+    left: 100%;
+    transition-duration: 1s;
+    left: 0;
+    z-index: -1;
+} 
+ .four:hover::after 
+  {
+    top: 0;
+    left: 0;
+    width: 100%;
+}  
+
+
+.five{
+    width: 200px;
+    height: 70px;
+    background-color:cornflowerblue;
+    border: 1px solid  black; 
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    left: -410px;
+    top: 100px;
+    
+
+}
+  .five::after
+ {
+    content: "";
+    width: 0%;
+    height: 100%;
+    background-color:darkgoldenrod;
+    position: absolute;
+    top: -100%;
+    transition-duration: 1s;
+    left: -100%;
+    z-index: -1;
+} 
+ .five:hover::after 
+  {
+    top: 0;
+    left: 0;
+    width: 100%;
+} 
+
+
+.six{
+    width: 200px;
+    height: 70px;
+    background-color:darkslategray;
+    border: 1px solid  black; 
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    left: -310px;
+    top: 100px;
+    
+    
+
+}
+  .six::after
+ {
+    content: "";
+    width: 0%;
+    height: 100%;
+    background-color:darkkhaki;
+    position: absolute;
+    top: -100%;
+    left: 100%;
+    transition-duration: 1s;
+    z-index: -1;
+ 
+} 
+ .six:hover:after 
+  {
+    top: 0%;
+    left: 0%;
+    width: 100%;
+}
+
+
+
+.seven{
+    width: 200px;
+    height: 70px;
+    background-color:darkgreen;
+    border: 1px solid  black; 
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    left: 100px;
+    top:130px;
+    
+
+}
+  .seven::after
+ {
+    content: "";
+    width: 0%;
+    height: 100%;
+    background-color:blueviolet;
+    position: absolute;
+    top: 100%;
+    left: 100%;
+    transition-duration: 1s;
+    z-index: -1;
+} 
+ .seven:hover::after 
+  {
+    top: 0%;
+    left: 0%;
+    width: 100%;
+}
+
+
+.eight{
+    width: 200px;
+    height: 70px;
+    background-color:darkblue;
+    border: 1px solid  black; 
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    left: 202px;
+    top:130px;
+    
+
+}
+  .eight::after
+ {
+    content: "";
+    width: 0%;
+    height: 100%;
+    background-color:deeppink;
+    position: absolute;
+    top: 100%;
+    left: -100%;
+    transition-duration: 1s;
+    z-index: -1;
+} 
+ .eight:hover::after 
+  {
+    top: 0%;
+    left: 0%;
+    width: 100%;
+}
+
+
+.nine{
+    width: 200px;
+    height: 70px;
+    background-color:darkred;
+    border: 1px solid  black; 
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    left: 300px;
+    top:130px;
+    
+    
+    
+
+}
+  .nine::after
+ {
+    content: "";
+    width: 0%;
+    height: 100%;
+    background-color:orange;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transition-duration: 1s;
+    z-index: -1;
+    
+} 
+ .nine:hover::after 
+  {
+    top: 0;
+    width: 100%;
+}
+.nine::before{
+    content: "";
+    width: 0%;
+    height: 100%;
+    background-color:olive;
+    position: absolute;
+    left: 50%;
+    top: 0%;
+    transition-duration: 1s;
+    z-index: -1;
+   
+}
+.nine:hover::before 
+{
+  top: 0%;
+  left: 0%;
+  width: 100%;
+}
+
+.ten{
+    width: 200px;
+    height: 70px;
+    background-color: darkmagenta;
+    border: 1px solid  black; 
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    left: -512px;
+    top:230px;  
+
+}
+ .ten::after
+ {
+    content: "";
+    width: 0%;
+    height: 100%;
+    background-color:chartreuse;
+    position: absolute;
+    top: 0%;
+    left: -100%;
+    transition-duration: 2s;
+    z-index: -1;
+    
+} 
+ .ten:hover::after 
+  {
+    transform: rotate(400deg);
+    top: 0;
+    left: 0;
+    width: 100%;
+} 
+
+
+
+.eleven{
+    width: 200px;
+    height: 70px;
+    background-color:Chocolate;
+    border: 1px solid  black; 
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    left: -412px;
+    top:230px;  
+
+}
+  .eleven::after
+ {
+    content: "";
+    width: 0%;
+    height: 100%;
+    background-color:red;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    transition-duration: 1.6s;
+    z-index: -1;
+    
+}  
+ .eleven:hover::after 
+  {
+    transform: scale(2,2);
+    top: 0%;
+    left: 0; 
+     width: 100%;
+}  
